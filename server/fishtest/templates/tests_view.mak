@@ -263,7 +263,7 @@
         </div>
       % endif
 
-      % if 'spsa' not in run['args'] and run['args'].get('base_options', 'Hash=16').replace(" ", "") != run['args'].get('new_options', 'Hash=16').replace(" ", ""):
+      % if run['args'].get('base_options', 'Hash=16').replace(" ", "") != run['args'].get('new_options', 'Hash=16').replace(" ", ""):
           <div class="alert alert-danger mb-2">
             Base engine options are not the same as the new engine options
           </div>
